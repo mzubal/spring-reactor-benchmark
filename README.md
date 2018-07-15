@@ -17,11 +17,13 @@ Both load tests issued 15300 requests. The tomcat application was able to handle
 As expected the tomcat application was doing fine until the load reached 200 req./s. After that the response time begun to quickly grow and the requests then started to time out. Especially 'Number of responses per second' shows the tomcat limit of 200 threads handling requests in a blocking way.
 ![tomcat](./doc/tomcat-blocking.png)
 
+
 ### Reactor
 As expected the Netty/Reactor handles the load well with it's async/non-blocking processing.
 ![reactor](./doc/netty-reactor.png)
 
 ## Running the tests
+Use following instructions to run the tests (you will need Java 8 installed).
 ### Tomcat
 Start the app:
 
@@ -36,7 +38,7 @@ Start the test (in other terminal):
 ```
 Wait for the loadTest to finish (the output contains a path to the Gatling report for the particular run).
 
-### Reactor
+### Reactor
 Don't forget to stop the tomcat app and repeat the process with person-reactive:
 
 ```
