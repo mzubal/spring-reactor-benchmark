@@ -1,0 +1,10 @@
+{
+  "simulation": "cz.zubal.reactor.LoadTest",
+  "simulationId": "loadtest",
+  "start": 1531686126536,
+  "description": "",
+  "scenarios": ["Person Service Load Test"],
+  "assertions": [
+
+  ]
+}
